@@ -7,12 +7,9 @@ var scalar = 1;
 var speed = .5;
 var r = 0;
 
-var backg;
 var blue;
 var pink;
 var shape;
-
-
 
 //var music;
 
@@ -20,7 +17,6 @@ function preload(){
 
    //music = loadSound("music.mp3");
 
-   backg = loadImage("imgs/background.png");
    blue = loadImage("imgs/blue.png");
    pink = loadImage("imgs/pink.png");
    shape = loadImage("imgs/shape.png");
@@ -28,10 +24,6 @@ function preload(){
 
 function setup() {
   createCanvas(1000,700);
-  imageMode(CENTER);
-  image(backg, width/2,height/2);
-
-
   //music.loop();
 
 }
