@@ -11,11 +11,11 @@ var blue;
 var pink;
 var shape;
 
-//var music;
+var music;
 
 function preload(){
 
-   //music = loadSound("music.mp3");
+   music = loadSound("music/music.mp3");
 
    blue = loadImage("imgs/blue.png");
    pink = loadImage("imgs/pink.png");
@@ -24,7 +24,7 @@ function preload(){
 
 function setup() {
   createCanvas(1000,700);
-  //music.loop();
+  music.loop();
 
 }
 
