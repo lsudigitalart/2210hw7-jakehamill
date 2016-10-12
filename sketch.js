@@ -1,5 +1,6 @@
-var time1 = 2000;
-var time2 = 30000;
+var time1 = 0;
+var time2 = 24650;
+var time3 = 30000;
 
 var angle = 0;
 var offset = 30;
@@ -40,9 +41,19 @@ if (currentTime > time1) {
   angle = angle + speed;
   scalar = scalar + speed;
 }
-if (currentTime > time2) {
+if (currentTime > time2 && currentTime < time3) {
   x = x + 2;
    image(blue, x, y, width/4, height/4);
+ }
+ if (currentTime > time3) {
+   var x = offset + cos(angle) * scalar;
+   var y = offset + sin(angle) * scalar;
+   rotate(r);
+   r = r + .01;
+   image(pink, x, y);
+   image(shape, x, y);
+   angle = angle + speed;
+   scalar = scalar + speed;
  }
 
 }
