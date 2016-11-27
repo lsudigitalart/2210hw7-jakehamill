@@ -3,7 +3,7 @@ var time2 = 24650;
 var time3 = 30000;
 
 var angle = 0;
-var offset = 30;
+var offset = 300;
 var scalar = 1;
 var speed = .5;
 var r = 0;
@@ -54,6 +54,15 @@ if (currentTime > time2 && currentTime < time3) {
    image(shape, x, y);
    angle = angle + speed;
    scalar = scalar + speed;
- }
+
+   if (x > 1200) {
+     x = 0;
+   }
+   if (r > 1200) {
+     r = 0;
+   }
+
+
+  }
 
 }
